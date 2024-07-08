@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>backstorg</class>
+ <widget class="QWidget" name="backstorg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>76</y>
+     <width>141</width>
+     <height>1011</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Lucida Console&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="toplabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>1920</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>76</y>
+     <width>1781</width>
+     <height>1004</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addUserButton">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>120</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>增加用户</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteUserButton">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>120</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>删除用户</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modifyUserButton">
+   <property name="geometry">
+    <rect>
+     <x>1510</x>
+     <y>120</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>修改用户信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshButton">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>120</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>1790</x>
+     <y>120</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="totalNum">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>232</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="acturalNum">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>280</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalLabel">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>230</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>应到人数</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="acturalLabel">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>280</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>实到人数</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="timeLabel">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>110</y>
+     <width>371</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="startTime">
+   <property name="geometry">
+    <rect>
+     <x>1370</x>
+     <y>330</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid black;
+font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>340</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>设置考勤时间</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="endTime">
+   <property name="geometry">
+    <rect>
+     <x>1510</x>
+     <y>330</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid black;
+font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>1560</x>
+     <y>420</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Lucida Console&quot;;</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
